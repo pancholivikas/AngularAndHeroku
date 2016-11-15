@@ -1,0 +1,99 @@
+.navbar {
+  border-radius: 0px;
+}
+.container {
+  padding-top: 60px;
+}
+.content-container {
+  background-color: #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+.content-container .col-md-9 .description {
+  text-align: center;
+}
+.content-container .col-md-9 .description .glyphicon-tag {
+  top: 2px;
+}
+.data-container {
+  padding: 10px 0px;
+  height: 100%;
+}
+.content {
+  display: block;
+  padding: 3px 0px;
+}
+.sort-keys {
+  margin: 0px 3px;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.sort-keys:last-of-type {
+  border-right: none;
+}
+.sort-keys:hover {
+  color: #337ab7;
+}
+.active {
+  text-decoration: underline;
+}
+
+.title-container {
+  padding: 10px;
+}
+.title {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  text-align: center;
+}
+.description {
+  padding: 10px 0px;
+}
+.description-details {
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+.button-container {
+  padding: 10px;
+  text-align: right;
+}
+.nav-tabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+}
+.nav-tabs li {
+  float: none;
+}
+.details-container {
+  background-color: #ddd;
+  margin: 15px;
+}
+.details-container .content-container {
+  background-color: transparent;
+  cursor: default;
+}
+
+.tabbable {
+  padding: 10px 0px;
+}
+.course-hours {
+  text-align: right;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+.votes {
+  text-align: left;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

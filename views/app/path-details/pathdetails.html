@@ -1,0 +1,47 @@
+<div class = "col-md-10 details-container">
+    <div class="col-md-12 content-container">
+        <div class="col-md-3">
+            <img ng-src="{{vm.data.image}}" height=100px width="100px">
+        </div>
+        <div class="col-md-9 title-container">
+            <div class="title">
+                {{vm.data.name}}
+            </div>
+            
+            <span class="content description">
+                <i class="glyphicon glyphicon-tag"></i> {{vm.data.tags}}
+            </span>
+
+            <div class="col-md-4 votes pull-left">
+                <span class="content" uib-tooltip="Click to Upvote" tooltip-placement="top-left">
+                    <i class="glyphicon glyphicon-thumbs-up cursor-pointer" ng-click="vm.setUpVotes(vm.data.id, vm.data.upVotes, vm.data.downVotes)"></i>
+                    <span>upVotes : {{vm.data.upVotes}}</span>
+                </span>
+                <span class="content" uib-tooltip="Click to Downvote" tooltip-placement="top-left">
+                    <i class="glyphicon glyphicon-thumbs-down cursor-pointer" ng-click="vm.setDownVotes(vm.data.id, vm.data.upVotes, vm.data.downVotes)"></i>
+                    <span>Downvotes : {{vm.data.downVotes}}</span>
+                </span>
+            </div>
+
+            <div class="col-md-4 course-hours pull-right">
+                <span class="content">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <span>Learns : {{vm.data.learner}}</span>
+                </span>
+                <span class="content">
+                    <i class="glyphicon glyphicon-time"></i>
+                    <span>Hours : {{vm.data.hours}}</span>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-12">
+        <span class="content description">
+            Description #
+        </span>
+        <div class="description-details">
+            {{vm.data.description}}
+        </div>
+    </div>
+</div>
