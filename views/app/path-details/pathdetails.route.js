@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-    angular.module( 'app' )
+    angular.module( 'app.pathdetails' )
         .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             $stateProvider
                 .state('path-details',
