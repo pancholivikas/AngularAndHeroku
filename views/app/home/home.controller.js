@@ -9,13 +9,8 @@
   /* @ngInject */
   function HomeController($http, $state, $q, learningPathService, sortkeys) {
     var vm = this;
-    console.log('controller');
     vm.language;
     activate();
-
-    vm.click = function click() {
-        console.log(vm.language);
-    }
 
     vm.gotoDetails = function gotoDetails(pathId) {
         $state.go('path-details', {
@@ -31,7 +26,7 @@
     function activate() {
         var promises = [getLearningPaths(), getSortKeys()];
         return $q.all(promises).then(function() {
-            console.log('Activated Home View');
+            
         });
     }
 
@@ -46,7 +41,6 @@
                 }
                 else {
                     var retrievedObject = JSON.parse(localStorage.getItem(value.id));
-                    //console.log('retrievedObject: ', JSON.parse(retrievedObject));
                     value.upVotes = retrievedObject.upVotes;
                     value.downVotes = retrievedObject.downVotes;
                 }

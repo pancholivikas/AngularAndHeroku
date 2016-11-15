@@ -10,7 +10,6 @@
   function PathDetailsController($q, $stateParams, $state, learningPathService) {
     var vm = this;
     vm.currentTabID = $stateParams.id;
-    console.log(vm.currentTabID)
     activate();
 
     vm.setUpVotes = function setUpVotes(id, upVotes, downVotes) {
@@ -30,7 +29,7 @@
     function activate() {
         var promises = [getLearningPaths()];
         return $q.all(promises).then(function() {
-            console.log('Activated Home View');
+            
         });
     }
 

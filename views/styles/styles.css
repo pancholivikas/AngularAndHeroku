@@ -73,6 +73,7 @@
 }
 .details-container {
   background-color: #ddd;
+  padding: 15px;
   margin: 15px;
 }
 .details-container .content-container {
