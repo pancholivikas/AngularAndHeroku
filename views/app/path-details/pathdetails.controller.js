@@ -10,6 +10,7 @@
   function PathDetailsController($q, $stateParams, $state, learningPathService) {
     var vm = this;
     vm.currentTabID = $stateParams.id;
+    vm.showUI = false;
     activate();
 
     vm.setUpVotes = function setUpVotes(id, upVotes, downVotes) {
@@ -29,7 +30,7 @@
     function activate() {
         var promises = [getLearningPaths()];
         return $q.all(promises).then(function() {
-            
+            vm.showUI = true;
         });
     }
 
@@ -41,7 +42,6 @@
                 vm.data =value;
                 vm.data.upVotes = retrievedObject.upVotes;
                 vm.data.downVotes = retrievedObject.downVotes;
-                return;
             }
 				});
         return vm.data;
